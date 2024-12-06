@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Safety Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">SafetyFirst</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#" id="report-btn">Report Incident</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><button id="dark-mode-toggle">🌙 Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Your Safety, Our Priority</h1>
+      <p>Access resources, support, and emergency help with a single click.</p>
+      <button class="btn-emergency" id="emergency-btn">Emergency Help</button>
+    </section>
+
+    <section class="resources">
+      <h2>Key Resources</h2>
+      <ul>
+        <li><a href="#">Local Helplines</a></li>
+        <li><a href="#">Self-Defense Tips</a></li>
+        <li><a href="#">Legal Rights</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Popup Form for Incident Reporting -->
+  <div id="popup-form" class="popup">
+    <div class="popup-content">
+      <span id="close-popup" class="close">&times;</span>
+      <h2>Report an Incident</h2>
+      <form id="incident-form">
+        <label for="incident-details">Describe the Incident:</label>
+        <textarea id="incident-details" required></textarea>
+        <button type="submit">Submit Report</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Women's Safety Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
